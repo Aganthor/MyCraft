@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <logicalFolder name="Math" displayName="Math" projectFiles="true">
+        <itemPath>src/Math/Matrix_Maths.cpp</itemPath>
+        <itemPath>src/Math/Matrix_Maths.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Renderer" displayName="Renderer" projectFiles="true">
+        <itemPath>src/Renderer/RendererMaster.cpp</itemPath>
+        <itemPath>src/Renderer/RendererMaster.h</itemPath>
+        <itemPath>src/Renderer/RendererSimple.cpp</itemPath>
+        <itemPath>src/Renderer/RendererSimple.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Shader" displayName="Shader" projectFiles="true">
+        <itemPath>src/Shader/Shader_Loader.cpp</itemPath>
+        <itemPath>src/Shader/Shader_Loader.h</itemPath>
+        <itemPath>src/Shader/Shader_Program.cpp</itemPath>
+        <itemPath>src/Shader/Shader_Program.h</itemPath>
+        <itemPath>src/Shader/Simple_Shader.cpp</itemPath>
+        <itemPath>src/Shader/Simple_Shader.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="States" displayName="States" projectFiles="true">
+        <itemPath>src/States/Game_State.cpp</itemPath>
+        <itemPath>src/States/Game_State.hpp</itemPath>
+        <itemPath>src/States/Playing_State.cpp</itemPath>
+        <itemPath>src/States/Playing_State.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Temp" displayName="Temp" projectFiles="true">
+        <itemPath>src/Temp/Quad.cpp</itemPath>
+        <itemPath>src/Temp/Quad.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Texture" displayName="Texture" projectFiles="true">
+        <itemPath>src/Texture/Texture.cpp</itemPath>
+        <itemPath>src/Texture/Texture.h</itemPath>
+        <itemPath>src/Texture/Texture_Atlas.cpp</itemPath>
+        <itemPath>src/Texture/Texture_Atlas.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Util" displayName="Util" projectFiles="true">
+        <itemPath>src/Util/Random.cpp</itemPath>
+        <itemPath>src/Util/Random.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="World" displayName="World" projectFiles="true">
+        <logicalFolder name="Block" displayName="Block" projectFiles="true">
+          <logicalFolder name="Block_Types" displayName="Block_Types" projectFiles="true">
+            <itemPath>src/World/Block/Block_Types/BAir.cpp</itemPath>
+            <itemPath>src/World/Block/Block_Types/BAir.h</itemPath>
+            <itemPath>src/World/Block/Block_Types/BGrass.cpp</itemPath>
+            <itemPath>src/World/Block/Block_Types/BGrass.h</itemPath>
+            <itemPath>src/World/Block/Block_Types/Block_Type.cpp</itemPath>
+            <itemPath>src/World/Block/Block_Types/Block_Type.h</itemPath>
+            <itemPath>src/World/Block/Block_Types/CMakeLists.txt</itemPath>
+          </logicalFolder>
+          <itemPath>src/World/Block/Block_Data.cpp</itemPath>
+          <itemPath>src/World/Block/Block_Data.h</itemPath>
+          <itemPath>src/World/Block/Block_Database.cpp</itemPath>
+          <itemPath>src/World/Block/Block_Database.h</itemPath>
+          <itemPath>src/World/Block/Block_ID.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="Chunk" displayName="Chunk" projectFiles="true">
+          <itemPath>src/World/Chunk/Chunk_Block.cpp</itemPath>
+          <itemPath>src/World/Chunk/Chunk_Block.h</itemPath>
+        </logicalFolder>
+        <itemPath>src/World/WorldMap.cpp</itemPath>
+        <itemPath>src/World/WorldMap.h</itemPath>
+      </logicalFolder>
+      <itemPath>src/Application.cpp</itemPath>
+      <itemPath>src/Application.h</itemPath>
+      <itemPath>src/Camera.cpp</itemPath>
+      <itemPath>src/Camera.h</itemPath>
+      <itemPath>src/Display.cpp</itemPath>
+      <itemPath>src/Display.h</itemPath>
+      <itemPath>src/Entity.h</itemPath>
+      <itemPath>src/GLM_Common.h</itemPath>
+      <itemPath>src/Model.cpp</itemPath>
+      <itemPath>src/Model.h</itemPath>
+      <itemPath>src/main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>11</standard>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs sfml-graphics`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs sfml-system`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs sfml-window`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs glew`</linkerOptionItem>
+            <linkerLibLibItem>GL</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="src/Application.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Display.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Entity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/GLM_Common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Math/Matrix_Maths.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Math/Matrix_Maths.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererMaster.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererMaster.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererSimple.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Loader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Loader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Program.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Program.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Shader/Simple_Shader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Simple_Shader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/States/Game_State.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/States/Game_State.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/States/Playing_State.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/States/Playing_State.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Temp/Quad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Temp/Quad.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture_Atlas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture_Atlas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Util/Random.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Util/Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Database.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_ID.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BAir.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BAir.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BGrass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BGrass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/Block_Type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/Block_Type.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/CMakeLists.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/World/Chunk/Chunk_Block.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Chunk/Chunk_Block.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/WorldMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/WorldMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="src/Application.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Application.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Display.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Entity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/GLM_Common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Math/Matrix_Maths.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Math/Matrix_Maths.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererMaster.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererMaster.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererSimple.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Renderer/RendererSimple.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Loader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Loader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Program.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Shader_Program.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Shader/Simple_Shader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Shader/Simple_Shader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/States/Game_State.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/States/Game_State.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/States/Playing_State.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/States/Playing_State.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Temp/Quad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Temp/Quad.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture_Atlas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Texture/Texture_Atlas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Util/Random.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Util/Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Data.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Database.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_ID.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BAir.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BAir.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BGrass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/BGrass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/Block_Type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/Block_Type.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/World/Block/Block_Types/CMakeLists.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/World/Chunk/Chunk_Block.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Chunk/Chunk_Block.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/WorldMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/WorldMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
