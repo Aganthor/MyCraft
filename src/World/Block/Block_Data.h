@@ -8,10 +8,10 @@
 
 namespace Block
 {
-	class Data
-	{
-		public:
-			Data(const std::string& fileName);
+    class Data
+    {
+        public:
+            Data(const std::string& fileName);
 
         private:
             ID m_blockID;
@@ -21,7 +21,7 @@ namespace Block
             Vector2 m_topTextureCoords;
             Vector2 m_sideTextureCoords;
             Vector2 m_bottomTextureCoords;
-	};
+    };
 }
 
 #endif // !BLOCK_DATA_H

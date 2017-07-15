@@ -4,8 +4,8 @@
 
 namespace Block
 {
-	Data::Data(const std::string& fileName)
-	{
+    Data::Data(const std::string& fileName)
+    {
         std::ifstream inFile;
 
         inFile.open("Data/Blocks/" + fileName + ".block");
@@ -42,5 +42,5 @@ namespace Block
                 inFile >> m_bottomTextureCoords.x >> m_bottomTextureCoords.y;
             }
         }
-	}
+    }
 }

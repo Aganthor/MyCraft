@@ -4,9 +4,13 @@
 #include <memory>
 #include <vector>
 
-
-#include "Block_Types/Block_Type.h"
 #include "Block_ID.h"
+
+//Forward declaration
+namespace Block
+{
+    class Type;
+}
 
 namespace Block
 {

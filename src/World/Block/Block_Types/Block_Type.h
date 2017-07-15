@@ -7,17 +7,17 @@
 
 namespace Block
 {
-	class Type
-	{
-		public:
-                    const Data& getData() const;
+    class Type
+    {
+        public:
+            const Data& getData() const;
 
-		protected:
-			Type(const std::string& fileName);
+        protected:
+                Type(const std::string& fileName);
 
-		private:
-			Data m_data;
-	};
+        private:
+                Data m_data;
+    };
 }
 
 #endif // !BLOCK_TYPE_H
