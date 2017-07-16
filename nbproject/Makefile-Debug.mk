@@ -57,6 +57,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/World/Block/Block_Types/BGrass.o \
 	${OBJECTDIR}/src/World/Block/Block_Types/Block_Type.o \
 	${OBJECTDIR}/src/World/Chunk/Chunk_Block.o \
+	${OBJECTDIR}/src/World/Chunk/Chunk_Section.o \
 	${OBJECTDIR}/src/World/WorldMap.o \
 	${OBJECTDIR}/src/main.o
 
@@ -194,6 +195,11 @@ ${OBJECTDIR}/src/World/Chunk/Chunk_Block.o: src/World/Chunk/Chunk_Block.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/World/Chunk
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags sfml-graphics` `pkg-config --cflags sfml-system` `pkg-config --cflags sfml-window` `pkg-config --cflags glew` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/World/Chunk/Chunk_Block.o src/World/Chunk/Chunk_Block.cpp
+
+${OBJECTDIR}/src/World/Chunk/Chunk_Section.o: src/World/Chunk/Chunk_Section.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/World/Chunk
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `pkg-config --cflags sfml-graphics` `pkg-config --cflags sfml-system` `pkg-config --cflags sfml-window` `pkg-config --cflags glew` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/World/Chunk/Chunk_Section.o src/World/Chunk/Chunk_Section.cpp
 
 ${OBJECTDIR}/src/World/WorldMap.o: src/World/WorldMap.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/World

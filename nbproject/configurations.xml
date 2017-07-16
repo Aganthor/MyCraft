@@ -60,9 +60,12 @@
         <logicalFolder name="Chunk" displayName="Chunk" projectFiles="true">
           <itemPath>src/World/Chunk/Chunk_Block.cpp</itemPath>
           <itemPath>src/World/Chunk/Chunk_Block.h</itemPath>
+          <itemPath>src/World/Chunk/Chunk_Section.cpp</itemPath>
+          <itemPath>src/World/Chunk/Chunk_Section.h</itemPath>
         </logicalFolder>
         <itemPath>src/World/WorldMap.cpp</itemPath>
         <itemPath>src/World/WorldMap.h</itemPath>
+        <itemPath>src/World/World_Constants.h</itemPath>
       </logicalFolder>
       <itemPath>src/Application.cpp</itemPath>
       <itemPath>src/Application.h</itemPath>
@@ -227,9 +230,15 @@
       </item>
       <item path="src/World/Chunk/Chunk_Block.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/World/Chunk/Chunk_Section.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Chunk/Chunk_Section.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/World/WorldMap.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/World/WorldMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/World_Constants.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -368,9 +377,15 @@
       </item>
       <item path="src/World/Chunk/Chunk_Block.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/World/Chunk/Chunk_Section.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/World/Chunk/Chunk_Section.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/World/WorldMap.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/World/WorldMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/World/World_Constants.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
