@@ -39,6 +39,7 @@
       <logicalFolder name="Util" displayName="Util" projectFiles="true">
         <itemPath>src/Util/Random.cpp</itemPath>
         <itemPath>src/Util/Random.h</itemPath>
+        <itemPath>src/Util/Singleton.h</itemPath>
       </logicalFolder>
       <logicalFolder name="World" displayName="World" projectFiles="true">
         <logicalFolder name="Block" displayName="Block" projectFiles="true">
@@ -183,6 +184,8 @@
       <item path="src/Util/Random.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Util/Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Util/Singleton.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/World/Block/Block_Data.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -330,6 +333,8 @@
       <item path="src/Util/Random.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Util/Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Util/Singleton.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/World/Block/Block_Data.cpp" ex="false" tool="1" flavor2="0">
       </item>

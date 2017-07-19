@@ -28,8 +28,8 @@ void Camera::update()
 
 void Camera::input(float dt)
 {
-	Vector3 change;
-	float speed = 2.0f;
+    Vector3 change;
+    float speed = 2.0f;
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
     {
@@ -55,9 +55,9 @@ void Camera::input(float dt)
         change.z += sin(glm::radians(rotation.y)) * speed;
     }
 
-	position += change * dt;
+    position += change * dt;
 
-	mouseInput();
+    mouseInput();
 }
 
 void Camera::mouseInput()
