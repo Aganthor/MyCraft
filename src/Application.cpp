@@ -12,7 +12,7 @@ void Application::runMainGameLoop()
 {
 	sf::Clock clock;
 
-    while (Display::isOpen())
+    while (Display::get().isOpen())
     {
     	auto dt = clock.restart().asSeconds();
 
@@ -25,7 +25,7 @@ void Application::runMainGameLoop()
 
         m_renderer.update(m_camera);
 
-        Display::checkForClose();
+        Display::get().checkForClose();
     }
 }
 

@@ -38,8 +38,6 @@ public:
     
 protected:
     Singleton() = default;
-    
-    virtual ~Singleton() = default;
 };
 
 

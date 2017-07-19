@@ -7,7 +7,7 @@ int main()
     Random::init();
     Random::Generator<std::minstd_rand> randomGen;
 
-    Display::init();
+    Display::get();
 
     Application app;
 
