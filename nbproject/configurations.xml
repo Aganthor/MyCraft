@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="Blocks" displayName="Blocks" projectFiles="true">
+      <itemPath>Data/Blocks/Air.block</itemPath>
+      <itemPath>Data/Blocks/Grass.block</itemPath>
+    </logicalFolder>
+    <logicalFolder name="Shaders" displayName="Shaders" projectFiles="true">
+      <itemPath>Data/Shaders/Chunk_Fragment.glsl</itemPath>
+      <itemPath>Data/Shaders/Chunk_Vertex.glsl</itemPath>
+      <itemPath>Data/Shaders/Simple_Fragment.glsl</itemPath>
+      <itemPath>Data/Shaders/Simple_Vertex.glsl</itemPath>
+    </logicalFolder>
     <logicalFolder name="src" displayName="src" projectFiles="true">
       <logicalFolder name="Math" displayName="Math" projectFiles="true">
         <itemPath>src/Math/Matrix_Maths.cpp</itemPath>
@@ -95,11 +105,11 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>Data/Shaders/Chunk_Fragment.glsl</itemPath>
-    <itemPath>Data/Shaders/Chunk_Vertex.glsl</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>src</Elem>
+    <Elem>Data/Shaders</Elem>
+    <Elem>Data/Blocks</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -123,9 +133,17 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="Data/Blocks/Air.block" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Data/Blocks/Grass.block" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Data/Shaders/Chunk_Fragment.glsl" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Data/Shaders/Chunk_Vertex.glsl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Data/Shaders/Simple_Fragment.glsl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Data/Shaders/Simple_Vertex.glsl" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Application.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -284,9 +302,17 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Data/Blocks/Air.block" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Data/Blocks/Grass.block" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Data/Shaders/Chunk_Fragment.glsl" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Data/Shaders/Chunk_Vertex.glsl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Data/Shaders/Simple_Fragment.glsl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Data/Shaders/Simple_Vertex.glsl" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Application.cpp" ex="false" tool="1" flavor2="0">
       </item>
