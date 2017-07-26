@@ -40,8 +40,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/Display.o \
 	${OBJECTDIR}/src/Math/Matrix_Maths.o \
 	${OBJECTDIR}/src/Model.o \
+	${OBJECTDIR}/src/Renderer/RendererChunk.o \
 	${OBJECTDIR}/src/Renderer/RendererMaster.o \
 	${OBJECTDIR}/src/Renderer/RendererSimple.o \
+	${OBJECTDIR}/src/Shader/Chunk_Shader.o \
 	${OBJECTDIR}/src/Shader/Shader_Loader.o \
 	${OBJECTDIR}/src/Shader/Shader_Program.o \
 	${OBJECTDIR}/src/Shader/Simple_Shader.o \
@@ -111,6 +113,11 @@ ${OBJECTDIR}/src/Model.o: src/Model.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags sfml-graphics` `pkg-config --cflags sfml-system` `pkg-config --cflags sfml-window` `pkg-config --cflags glew` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Model.o src/Model.cpp
 
+${OBJECTDIR}/src/Renderer/RendererChunk.o: src/Renderer/RendererChunk.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/Renderer
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `pkg-config --cflags sfml-graphics` `pkg-config --cflags sfml-system` `pkg-config --cflags sfml-window` `pkg-config --cflags glew` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Renderer/RendererChunk.o src/Renderer/RendererChunk.cpp
+
 ${OBJECTDIR}/src/Renderer/RendererMaster.o: src/Renderer/RendererMaster.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/Renderer
 	${RM} "$@.d"
@@ -120,6 +127,11 @@ ${OBJECTDIR}/src/Renderer/RendererSimple.o: src/Renderer/RendererSimple.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/Renderer
 	${RM} "$@.d"
 	$(COMPILE.cc) -g `pkg-config --cflags sfml-graphics` `pkg-config --cflags sfml-system` `pkg-config --cflags sfml-window` `pkg-config --cflags glew` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Renderer/RendererSimple.o src/Renderer/RendererSimple.cpp
+
+${OBJECTDIR}/src/Shader/Chunk_Shader.o: src/Shader/Chunk_Shader.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/Shader
+	${RM} "$@.d"
+	$(COMPILE.cc) -g `pkg-config --cflags sfml-graphics` `pkg-config --cflags sfml-system` `pkg-config --cflags sfml-window` `pkg-config --cflags glew` -std=c++14  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Shader/Chunk_Shader.o src/Shader/Chunk_Shader.cpp
 
 ${OBJECTDIR}/src/Shader/Shader_Loader.o: src/Shader/Shader_Loader.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/Shader

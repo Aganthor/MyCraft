@@ -9,7 +9,8 @@ namespace Shader
     class Simple_Shader : public Shader_Program
     {
         public:
-            Simple_Shader();
+            Simple_Shader(const std::string& vertexFile = "Simple_Vertex",
+                          const std::string& fragmentFile = "Simple_Fragment");
 
             void setTime(float time);
 
@@ -18,7 +19,7 @@ namespace Shader
             void setProjMatrix(const Matrix4& matrix);
 
         protected:
-            void getUniformLocations() override;
+            virtual void getUniformLocations() override;
 
         protected:
             GLuint m_locationTime = 0;
